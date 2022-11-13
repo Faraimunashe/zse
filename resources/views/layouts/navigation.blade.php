@@ -54,7 +54,7 @@
     <aside id="sidebar-wrapper">
       <div class="sidebar-brand">
         <a href="{{route('dashboard')}}">
-            <span class="logo-name">City Council</span>
+            <span class="logo-name">Stock Exchange</span>
         </a>
       </div>
         <ul class="sidebar-menu">
@@ -66,15 +66,15 @@
                 </a>
             </li>
             <li class="dropdown">
-                <a href="{{route('locations')}}" class="nav-link">
+                <a href="#" class="nav-link">
                     <i class="fas fa-map-marker"></i>
-                    <span>Locations</span>
+                    <span>Brokers</span>
                 </a>
             </li>
             <li class="dropdown">
-                <a href="{{route('population')}}" class="nav-link">
+                <a href="#" class="nav-link">
                     <i class="fas fa-users"></i>
-                    <span>Population</span>
+                    <span>Users</span>
                 </a>
             </li>
         </ul>
