@@ -66,13 +66,13 @@
                 </a>
             </li>
             <li class="dropdown">
-                <a href="#" class="nav-link">
+                <a href="{{route('admin-brokers')}}" class="nav-link">
                     <i class="fas fa-map-marker"></i>
                     <span>Brokers</span>
                 </a>
             </li>
             <li class="dropdown">
-                <a href="#" class="nav-link">
+                <a href="{{route('admin-users')}}" class="nav-link">
                     <i class="fas fa-users"></i>
                     <span>Users</span>
                 </a>

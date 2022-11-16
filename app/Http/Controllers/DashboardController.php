@@ -9,13 +9,13 @@ class DashboardController extends Controller
 {
     public function index(Request $request)
     {
-        if(Auth::hasRole('admin'))
-        {
-
-        }elseif(Auth::hasRole('broker'))
+        if(Auth::user()->hasRole('admin'))
         {
             return redirect()->route('admin-dashboard');
-        }elseif(Auth::hasRole('user'))
+        }elseif(Auth::user()->hasRole('broker'))
+        {
+
+        }elseif(Auth::user()->hasRole('user'))
         {
 
         }else{
