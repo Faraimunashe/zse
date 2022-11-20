@@ -17,7 +17,7 @@ class DashboardController extends Controller
 
         }elseif(Auth::user()->hasRole('user'))
         {
-
+            return redirect()->route('user-dashboard');
         }else{
             Auth::guard('web')->logout();
 

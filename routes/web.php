@@ -24,6 +24,8 @@ Route::group(['middleware', ['auth', 'role:admin']], function(){
 
     Route::get('/admin/users', 'App\Http\Controllers\admin\UserController@index')->name('admin-users');
 
+    Route::get('/admin/dividends', 'App\Http\Controllers\admin\DividendController@index')->name('admin-dividends');
+
     Route::get('/admin/brokers', 'App\Http\Controllers\admin\BrokerController@index')->name('admin-brokers');
     Route::get('/admin/add-broker', 'App\Http\Controllers\admin\BrokerController@broker')->name('admin-broker-add');
     Route::post('/admin-add-broker', 'App\Http\Controllers\admin\BrokerController@add')->name('admin-add-broker');
@@ -35,6 +37,8 @@ Route::group(['middleware' => ['auth', 'role:brocker']], function () {
 
 Route::group(['middleware' => ['auth', 'role:user']], function () {
     Route::get('/home', 'App\Http\Controllers\user\DashboardController@index')->name('user-dashboard');
+
+    Route::get('/dividend', 'App\Http\Controllers\user\DividendController@index')->name('user-dividend');
 });
 
 require __DIR__.'/auth.php';

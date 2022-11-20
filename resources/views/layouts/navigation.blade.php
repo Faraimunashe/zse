@@ -62,21 +62,38 @@
             <li class="dropdown">
                 <a href="{{route('dashboard')}}" class="nav-link">
                     <i class="fas fa-chart-pie"></i>
-                    <span>Dashboard</span>
+                    <span>Home</span>
                 </a>
             </li>
+            @if (Auth::user()->hasRole('admin'))
+                <li class="dropdown">
+                    <a href="{{route('admin-brokers')}}" class="nav-link">
+                        <i class="fas fa-map-marker"></i>
+                        <span>Brokers</span>
+                    </a>
+                </li>
+                <li class="dropdown">
+                    <a href="{{route('admin-dividends')}}" class="nav-link">
+                        <i class="fas fa-map-marker"></i>
+                        <span>Dividends</span>
+                    </a>
+                </li>
+                <li class="dropdown">
+                    <a href="{{route('admin-users')}}" class="nav-link">
+                        <i class="fas fa-users"></i>
+                        <span>Users</span>
+                    </a>
+                </li>
+            @elseif (Auth::user()->hasRole('broker'))
+
+            @elseif (Auth::user()->hasRole('user'))
             <li class="dropdown">
-                <a href="{{route('admin-brokers')}}" class="nav-link">
-                    <i class="fas fa-map-marker"></i>
-                    <span>Brokers</span>
-                </a>
-            </li>
-            <li class="dropdown">
-                <a href="{{route('admin-users')}}" class="nav-link">
+                <a href="{{route('user-dividend')}}" class="nav-link">
                     <i class="fas fa-users"></i>
-                    <span>Users</span>
+                    <span>Dividend</span>
                 </a>
             </li>
+            @endif
         </ul>
     </aside>
 </div>
