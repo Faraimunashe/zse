@@ -254,4 +254,131 @@
 
         {{ $line->script() }}
     </section>
+<div class="row">
+
+    <div class="col-md-12">
+        <div class="card">
+            <div class="fl-row fl-row-fixed-width fl-row-bg-none fl-node-5e0edecf552cc ml-5" data-node="5e0edecf552cc">
+                <div class="fl-row-content-wrap">
+                <div class="fl-row-content fl-row-fixed-width fl-node-content">
+                <div class="fl-col-group fl-node-5e0edecf7b232" data-node="5e0edecf7b232">
+                <div class="fl-col fl-node-5e0edecf7b685 fl-col-has-cols" data-node="5e0edecf7b685">
+                <div class="fl-col-content fl-node-content">
+                <div class="fl-col-group fl-node-63621f30681de fl-col-group-nested" data-node="63621f30681de">
+                <div class="fl-col fl-node-63621f306849d fl-col-small" data-node="63621f306849d">
+                <div class="fl-col-content fl-node-content">
+                <div class="fl-module fl-module-heading fl-node-5e1c7ae87b95d" data-node="5e1c7ae87b95d">
+                <div class="fl-module-content fl-node-content">
+                <h4 class="fl-heading">
+                <span class="fl-heading-text">TOP GAINERS</span>
+                </h4>
+                </div>
+                </div>
+                <div class="fl-module fl-module-rich-text fl-node-5f982927378bd" data-node="5f982927378bd">
+                <div class="fl-module-content fl-node-content">
+                <div class="fl-rich-text">
+                <p>&nbsp;</p>
+                <table style="height: 264px;" width="362" bgcolor="#e8e8e8">
+                <tbody>
+                <tr>
+                <th>SYMBOL</th>
+                <th>VALUE</th>
+                <th>CHANGE</th>
+                </tr>
+                <tr>
+                <td>MASH.zw</td>
+                <td>$10.3233</td>
+                <td><span style="color: #000000;">   +14.70%<span style="color: green;">▲</span></span></td>
+                </tr>
+                <tr>
+                <td>SIM.zw</td>
+                <td><span style="color: #000000;">$234.9769</span></td>
+                <td><span style="color: #000000;">   +11.72%<span style="color: green;">▲</span></span></td>
+                </tr>
+                <tr>
+                <td><span style="color: #000000;">TRUW.zw</span></td>
+                <td>$2.4489</td>
+                <td><span style="color: #000000;">   +11.31%<span style="color: green;">▲</span></span></td>
+                </tr>
+                <tr>
+                <td>DLTA.zw</td>
+                <td>$214.4777</td>
+                <td><span style="color: #000000;">     +6.55</span><span style="color: #000000;">%<span style="color: green;">▲</span></span></td>
+                </tr>
+                <tr>
+                <td>NMB.zw</td>
+                <td>$25.0018</td>
+                <td><span style="color: #000000;">     +4.09%<span style="color: green;">▲</span></span></td>
+                </tr>
+                </tbody>
+                </table>
+                <p>&nbsp;</p>
+                </div>
+                </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+    <div class="fl-col fl-node-63621f30684a5 fl-col-small" data-node="63621f30684a5">
+        <div class="fl-col-content fl-node-content">
+        <div class="fl-module fl-module-heading fl-node-5e1c7aefe20b0" data-node="5e1c7aefe20b0">
+        <div class="fl-module-content fl-node-content">
+        <h4 class="fl-heading">
+        <span class="fl-heading-text">TOP LOSERS</span>
+        </h4>
+        </div>
+        </div>
+        <div class="fl-module fl-module-rich-text fl-node-5e1c7a9568c75" data-node="5e1c7a9568c75">
+        <div class="fl-module-content fl-node-content">
+        <div class="fl-rich-text">
+        <p>&nbsp;</p>
+        <table style="height: 263px;" width="310" bgcolor="#e8e8e8">
+        <tbody>
+        <tr>
+        <th>  SYMBOL</th>
+        <th>VALUE</th>
+        <th>CHANGE</th>
+        </tr>
+        <tr>
+        <td>EDGR.zw</td>
+        <td><span style="color: #000000;">$9.0000</span></td>
+        <td><span style="color: #000000;">    -5.56%<span style="color: green;"><span style="color: red;">▼</span></span></span></td>
+        </tr>
+        <tr>
+        <td>AFDIS.zw</td>
+        <td>$15.4000</td>
+        <td><span style="color: #000000;">    -0.65%<span style="color: green;"><span style="color: red;">▼</span></span></span></td>
+        </tr>
+        <tr>
+        <td>OKZ.zw</td>
+        <td>$30.5187</td>
+        <td><span style="color: #000000;">    -2.40%<span style="color: green;"><span style="color: red;">▼</span></span></span></td>
+        </tr>
+        <tr>
+        <td>ARTD.zw</td>
+        <td>$15.4000</td>
+        <td><span style="color: #000000;">    -0.65%<span style="color: green;"><span style="color: red;">▼</span></span></span></td>
+        </tr>
+        <tr>
+        <td>FCA.zw</td>
+        <td>$9.0327</td>
+        <td><span style="color: #000000;">    -0.53%<span style="color: green;"><span style="color: red;">▼</span></span></span></td>
+        </tr>
+        </tbody>
+        </table>
+        <p>&nbsp;</p>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
 </x-app-layout>

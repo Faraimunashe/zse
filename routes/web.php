@@ -26,6 +26,9 @@ Route::group(['middleware', ['auth', 'role:admin']], function(){
 
     Route::get('/admin/dividends', 'App\Http\Controllers\admin\DividendController@index')->name('admin-dividends');
 
+    Route::get('/admin/news-letter', 'App\Http\Controllers\admin\NewsController@index')->name('admin-news');
+    Route::post('/admin/send-news', 'App\Http\Controllers\admin\NewsController@send')->name('admin-send-news');
+
     Route::get('/admin/brokers', 'App\Http\Controllers\admin\BrokerController@index')->name('admin-brokers');
     Route::get('/admin/add-broker', 'App\Http\Controllers\admin\BrokerController@broker')->name('admin-broker-add');
     Route::post('/admin-add-broker', 'App\Http\Controllers\admin\BrokerController@add')->name('admin-add-broker');

@@ -84,6 +84,12 @@
                         <span>Users</span>
                     </a>
                 </li>
+                <li class="dropdown">
+                    <a href="{{route('admin-news')}}" class="nav-link">
+                        <i class="fas fa-users"></i>
+                        <span>News Letter</span>
+                    </a>
+                </li>
             @elseif (Auth::user()->hasRole('broker'))
                 <li class="dropdown">
                     <a href="{{route('broker-portifolio')}}" class="nav-link">
