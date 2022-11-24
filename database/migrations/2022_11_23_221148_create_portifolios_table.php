@@ -13,13 +13,11 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('shares', function (Blueprint $table) {
+        Schema::create('portifolios', function (Blueprint $table) {
             $table->id();
             $table->bigInteger('user_id');
-            $table->bigInteger('broker_id');
+            $table->decimal('selling');
             $table->decimal('dividend');
-            $table->decimal('buying');
-            $table->integer('status');
             $table->timestamps();
         });
     }
@@ -31,6 +29,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('shares');
+        Schema::dropIfExists('portifolios');
     }
 };

@@ -13,13 +13,14 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('shares', function (Blueprint $table) {
+        Schema::create('investers', function (Blueprint $table) {
             $table->id();
             $table->bigInteger('user_id');
-            $table->bigInteger('broker_id');
-            $table->decimal('dividend');
-            $table->decimal('buying');
-            $table->integer('status');
+            $table->string('name');
+            $table->string('natid');
+            $table->string('sex');
+            $table->string('phone');
+            $table->string('address');
             $table->timestamps();
         });
     }
@@ -31,6 +32,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('shares');
+        Schema::dropIfExists('investers');
     }
 };

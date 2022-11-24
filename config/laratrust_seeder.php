@@ -17,7 +17,7 @@ return [
             'payments' => 'c,r,u,d',
             'profile' => 'r,u'
         ],
-        'brocker' => [
+        'broker' => [
             'users' => 'c,r,u,d',
             'profile' => 'r,u'
         ],

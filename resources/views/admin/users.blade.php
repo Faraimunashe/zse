@@ -3,7 +3,7 @@
         <div class="col-12">
           <div class="card">
             <div class="card-header">
-              <h4>Brokers List</h4>
+              <h4>Users List</h4>
               <div class="card-header-form">
               </div>
             </div>

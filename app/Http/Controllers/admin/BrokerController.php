@@ -40,7 +40,7 @@ class BrokerController extends Controller
                 'password' => Hash::make('broker1234'),
             ]);
 
-            $user->attachRole('brocker');
+            $user->attachRole('broker');
 
             event(new Registered($user));
 

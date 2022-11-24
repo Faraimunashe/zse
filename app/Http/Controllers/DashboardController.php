@@ -14,7 +14,7 @@ class DashboardController extends Controller
             return redirect()->route('admin-dashboard');
         }elseif(Auth::user()->hasRole('broker'))
         {
-
+            return redirect()->route('broker-dashboard');
         }elseif(Auth::user()->hasRole('user'))
         {
             return redirect()->route('user-dashboard');

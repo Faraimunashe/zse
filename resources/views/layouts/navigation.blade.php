@@ -85,14 +85,43 @@
                     </a>
                 </li>
             @elseif (Auth::user()->hasRole('broker'))
-
+                <li class="dropdown">
+                    <a href="{{route('broker-portifolio')}}" class="nav-link">
+                        <i class="fas fa-users"></i>
+                        <span>Portifolio</span>
+                    </a>
+                </li>
+                <li class="dropdown">
+                    <a href="{{route('broker-add-portifolio')}}" class="nav-link">
+                        <i class="fas fa-users"></i>
+                        <span>Update Portifolio</span>
+                    </a>
+                </li>
             @elseif (Auth::user()->hasRole('user'))
-            <li class="dropdown">
-                <a href="{{route('user-dividend')}}" class="nav-link">
-                    <i class="fas fa-users"></i>
-                    <span>Dividend</span>
-                </a>
-            </li>
+                <li class="dropdown">
+                    <a href="{{route('user-portifolios')}}" class="nav-link">
+                        <i class="fas fa-users"></i>
+                        <span>Portifolios</span>
+                    </a>
+                </li>
+                <li class="dropdown">
+                    <a href="{{route('user-shares')}}" class="nav-link">
+                        <i class="fas fa-users"></i>
+                        <span>Shares</span>
+                    </a>
+                </li>
+                <li class="dropdown">
+                    <a href="{{route('user-dividend')}}" class="nav-link">
+                        <i class="fas fa-users"></i>
+                        <span>Dividend</span>
+                    </a>
+                </li>
+                <li class="dropdown">
+                    <a href="{{route('user-details')}}" class="nav-link">
+                        <i class="fas fa-users"></i>
+                        <span>My Details</span>
+                    </a>
+                </li>
             @endif
         </ul>
     </aside>
