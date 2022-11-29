@@ -9,6 +9,6 @@ class DashboardController extends Controller
 {
     public function index()
     {
-        return view('admin.brokers');
+        return redirect()->back()->route('admin-users');
     }
 }
