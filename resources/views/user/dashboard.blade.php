@@ -38,6 +38,24 @@
             </div>
           </div>
         </div> --}}
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header">
+                      <h4>News & Notices</h4>
+                    </div>
+                    <div class="card-body">
+                        <marquee behavior="scroll" direction="left" scrollamount="6">
+                            <p>
+                                @foreach (\App\Models\Notice::all() as $item)
+                                    <strong>{{$item->title}}</strong>{{" - ".$item->content."    ||  "}}
+                                @endforeach
+                            </p>
+                        </marquee>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <div class="row">
             <div class="col-md-3">

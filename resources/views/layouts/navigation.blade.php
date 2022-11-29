@@ -72,22 +72,28 @@
                         <span>Brokers</span>
                     </a>
                 </li>
-                <li class="dropdown">
+                {{-- <li class="dropdown">
                     <a href="{{route('admin-dividends')}}" class="nav-link">
                         <i class="fas fa-map-marker"></i>
                         <span>Dividends</span>
                     </a>
-                </li>
+                </li> --}}
                 <li class="dropdown">
                     <a href="{{route('admin-users')}}" class="nav-link">
                         <i class="fas fa-users"></i>
                         <span>Users</span>
                     </a>
                 </li>
-                <li class="dropdown">
+                {{-- <li class="dropdown">
                     <a href="{{route('admin-news')}}" class="nav-link">
                         <i class="fas fa-users"></i>
                         <span>News Letter</span>
+                    </a>
+                </li> --}}
+                <li class="dropdown">
+                    <a href="{{route('admin-notices')}}" class="nav-link">
+                        <i class="fas fa-users"></i>
+                        <span>Notices</span>
                     </a>
                 </li>
             @elseif (Auth::user()->hasRole('broker'))
@@ -116,12 +122,12 @@
                         <span>Shares</span>
                     </a>
                 </li>
-                <li class="dropdown">
+                {{-- <li class="dropdown">
                     <a href="{{route('user-dividend')}}" class="nav-link">
                         <i class="fas fa-users"></i>
                         <span>Dividend</span>
                     </a>
-                </li>
+                </li> --}}
                 <li class="dropdown">
                     <a href="{{route('user-details')}}" class="nav-link">
                         <i class="fas fa-users"></i>

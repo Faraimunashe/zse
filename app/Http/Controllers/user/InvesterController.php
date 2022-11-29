@@ -12,7 +12,10 @@ class InvesterController extends Controller
 {
     public function index()
     {
-        return view('user.invester');
+        $invester = Invester::where('user_id', Auth::id())->first();
+        return view('user.invester', [
+            'invester' => $invester
+        ]);
     }
 
     public function add(Request $request)
